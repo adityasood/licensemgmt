@@ -6,6 +6,7 @@ var fs = require('fs');
 var path = require('path')
 var ObjectId = require('mongodb').ObjectID;
 var PythonShell = require('python-shell');
+var url ;
 //var url = 'mongodb://localhost:27017/vendor';
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 9090,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
