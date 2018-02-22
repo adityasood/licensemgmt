@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cruisecontrol>
+  <info>
+    <property name="logdir" value="/Users/adityas/Documents/Go-CD /Go_zip_install/go-agent-16.12.0/pipelines/PipelineA/cruise-output" />
+    <property name="logfile" value="log.xml" />
+  </info>
+  <build time="0 minute(s) 0 second(s)">
+    <target name="exec">
+      <task name="ls" />
+    </target>
+  </build>
+</cruisecontrol>
+
