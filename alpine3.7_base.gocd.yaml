@@ -7,7 +7,7 @@ pipelines:
     materials:
       app-repo:
         git: "https://github.com/adityasood/gocd-demo-config-repo-code.git"
-        branch: v2
+        branch: master
         destination: oeb_docker_images
     timer:
       spec: "0 30 7 * * ? *"
