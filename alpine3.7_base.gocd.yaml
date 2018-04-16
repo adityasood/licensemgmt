@@ -6,7 +6,7 @@ pipelines:
     label_template: ${COUNT}_${app-repo[:7]}
     materials:
       app-repo:
-        git: "git@github.niaid.nih.gov:oeb/docker-images.git"
+        git: "https://github.com/adityasood/gocd-demo-config-repo-code.git"
         branch: v2
         destination: oeb_docker_images
     timer:
