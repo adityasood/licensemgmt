@@ -1,4 +1,4 @@
 {
-  "image": "adityasood/friendlyhello",
+  "image": "localhost:5000/gocd-server",
   "tag": "v1.1"
 }
