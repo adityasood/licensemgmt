@@ -1,4 +1,4 @@
 {
   "image": "localhost:5000/gocd-server",
-  "tag": "v18.5.0"
+  "tag": "v18.4.0"
 }
