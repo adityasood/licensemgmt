@@ -2,4 +2,4 @@
 
 tag_label=$1
 
-echo "{  \"image\": \"hello-world\", \"tag\": \"latest\"}" > artifact_info.json
+echo "{  \"image\": \"localhost:5000/gocd-server\", \"tag\": \"$tag_label\"}" > artifact_info.json
