@@ -7,7 +7,7 @@
 
 i=20
 while [ "$i" -le 101 ]; do
-echo "Looping ... number $i";
+echo "Looping dooping ... number $i";
 sleep 3;
 i=$(( i + 10 ))
 done
