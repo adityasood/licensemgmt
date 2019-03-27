@@ -2,7 +2,7 @@ format_version: 3
 environments:
   testing:
     environment_variables:
-      DEPLOYMENT: abcdef
+      DEPLOYMENT: {{SECRET:[my_secret1][api-user-password]}}
     pipelines:
       - mypipe1
 pipelines:
@@ -12,7 +12,7 @@ pipelines:
     lock_behavior: none
     materials:
       mygit:
-        git: http://my.example.org/mygit.git
+        git: https://github.com/adityasood/gocd-yaml-config-example.git
         branch: ci
     stages:
       - build:
