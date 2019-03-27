@@ -4,7 +4,7 @@ environments:
     environment_variables:
       DEPLOYMENT: abcdef
     secure_variables:
-      ENV_PASSWORD: {{SECRET:[my_secret1][api-user-password]}}
+      ENV_PASSWORD: hello-buffalo
     pipelines:
       - mypipe1
 pipelines:
