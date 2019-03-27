@@ -2,7 +2,8 @@ format_version: 3
 environments:
   testing:
     environment_variables:
-      DEPLOYMENT: "{{SECRET:[my_secret1][api-user-password]}}"
+      DEPLOYMENT-PASSWORD: "{{SECRET:[my_secret1][api-user-password]}}"
+      DEPLOYMENT-USER: "{{SECRET:[my_secret1][api-user]}}"
     pipelines:
       - mypipe1
 pipelines:
@@ -23,4 +24,4 @@ pipelines:
                    command: /bin/bash
                    arguments:
                     - "-c"
-                    - "echo -e $DEPLOYMENT"
+                    - "curl "curl -k 'https://localhost:8154/go/api/admin/security/auth_configs/9cad79b0-4d9e-4a62-829c-eb4d9488062f' -u $DEPLOYMENT-USER:$DEPLOYMENT-PASSWORD -H 'Accept: application/vnd.go.cd.v1+json'"
