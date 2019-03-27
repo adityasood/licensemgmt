@@ -13,7 +13,6 @@ pipelines:
     materials:
       mygit:
         git: https://github.com/adityasood/gocd-yaml-config-example.git
-        branch: ci
     stages:
       - build:
           clean_workspace: true
