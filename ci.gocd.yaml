@@ -2,7 +2,7 @@ format_version: 3
 environments:
   testing:
     environment_variables:
-      DEPLOYMENT: {{SECRET:[my_secret1][config-env-variable]}}
+      DEPLOYMENT: abcdef
     pipelines:
       - mypipe1
 pipelines:
