@@ -2,9 +2,9 @@ format_version: 3
 environments:
   testing:
     environment_variables:
-      DEPLOYMENT: 
+      DEPLOYMENT: abcdef
     secure_variables:
-      ENV_PASSWORD: {{SECRET:[my_secret1][config-env-variable]}}
+      ENV_PASSWORD: {{SECRET:[my_secret1][api-user-password]}}
     pipelines:
       - mypipe1
 pipelines:
