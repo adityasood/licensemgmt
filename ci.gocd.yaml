@@ -1,0 +1,25 @@
+format_version: 3
+environments:
+  testing:
+    environment_variables:
+      DEPLOYMENT: 
+    secure_variables:
+      ENV_PASSWORD: {{SECRET:[my_secret1][config-env-variable]}}
+    pipelines:
+      - mypipe1
+pipelines:
+  mypipe1: 
+    group: mygroup
+    label_template: "${mygit[:8]}"
+    lock_behavior: none
+    materials:
+      mygit:
+        git: http://my.example.org/mygit.git
+        branch: ci
+    stages:
+      - build:
+          clean_workspace: true
+          jobs:
+            csharp:
+              tasks: # ordered list of tasks to execute in job csharp
+               - script: "echo -e $ENV_PASSWORD"
