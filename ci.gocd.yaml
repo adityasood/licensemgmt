@@ -24,4 +24,4 @@ pipelines:
                    command: /bin/bash
                    arguments:
                     - "-c"
-                    - "curl -k 'https://localhost:8154/go/api/admin/security/auth_configs/9cad79b0-4d9e-4a62-829c-eb4d9488062f' -u $DEPLOYMENT-USER:$DEPLOYMENT-PASSWORD -H 'Accept: application/vnd.go.cd.v1+json'"
+                    - "curl -k 'https://localhost:8154/go/api/admin/security/auth_configs/9cad79b0-4d9e-4a62-829c-eb4d9488062f' -u $second_secret_param:$first_secret_param -H 'Accept: application/vnd.go.cd.v1+json'"
