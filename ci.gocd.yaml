@@ -2,7 +2,7 @@ format_version: 3
 environments:
   testing:
     environment_variables:
-      DEPLOYMENT: abcdef
+      DEPLOYMENT: "{{SECRET:[my_secret1][api-user-password]}}"
     pipelines:
       - mypipe1
 pipelines:
