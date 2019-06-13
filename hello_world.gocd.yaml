@@ -22,22 +22,7 @@ pipelines:
           default_job:
             timeout: 0
             elastic_profile_id:
-            artifacts:
-            - external:
-                id: hello-world-job
-                store_id: docker-artifact
-                configuration:
-                  options:
-                    BuildFile: ''
-                    Tag: v0.0.2
-                    Image: adityasood/test_image
             tasks:
-            - exec:
-                arguments:
-                - -c
-                - docker images;
-                command: /bin/bash
-                run_if: passed
             - exec:
                 arguments:
                 - Hello World
