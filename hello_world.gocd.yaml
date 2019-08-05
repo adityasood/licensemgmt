@@ -28,6 +28,6 @@ pipelines:
                 run_if: passed
             - exec:
                 arguments:
-                - $testing	
+                - "$testing"
                 command: echo	
                 run_if: passed
