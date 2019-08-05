@@ -24,10 +24,7 @@ pipelines:
               testing: l4uWwU7WMV4=
             tasks:
             - exec:
-                command: ls
-                run_if: passed
-            - exec:
                 arguments:
                 - "$testing"
-                command: echo	
+                command: ls
                 run_if: passed
