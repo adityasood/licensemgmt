@@ -1,4 +1,4 @@
-format_version: 3
+format_version: 1
 pipelines:
   hello_world1:
     group: sample
