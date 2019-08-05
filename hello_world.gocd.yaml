@@ -16,8 +16,8 @@ pipelines:
         keep_artifacts: false
         clean_workspace: false
         environment_variables:
-          DEPLOYMENT: testing
-          FOO: bar
+          DEPLOYMENT: "testing"
+          FOO: "bar"
         secure_variables:
           MY_PASSWORD: "l4uWwU7WMV4="
         approval:
