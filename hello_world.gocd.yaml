@@ -26,5 +26,5 @@ pipelines:
             - exec:
                 arguments:
                 - "$testing"
-                command: ls
+                command: echo
                 run_if: passed
