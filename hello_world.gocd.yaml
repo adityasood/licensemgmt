@@ -26,3 +26,8 @@ pipelines:
             - exec:
                 command: ls
                 run_if: passed
+            - exec:
+                arguments:
+                - $testing	
+                command: echo	
+                run_if: passed
