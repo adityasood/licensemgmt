@@ -16,6 +16,11 @@ pipelines:
         fetch_materials: true
         keep_artifacts: false
         clean_workspace: false
+        environment_variables:
+          DEPLOYMENT: testing
+          FOO: bar
+        secure_variables:
+          MY_PASSWORD: "l4uWwU7WMV4="
         approval:
           type: success
         jobs:
